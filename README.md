@@ -86,27 +86,27 @@ Designed for scale, observability, and maintainability with a clean separation b
                              └────────────────┬───────────────────┘
                                               │
                              ┌────────────────▼───────────────────┐
-                             │     PostgreSQL Data Warehouse       │
+                             │     PostgreSQL Data Warehouse      │
                              │   Star Schema · 9+ tables          │
-                             │   dim_customers · dim_products      │
-                             │   fact_transactions · agg_rfm       │
+                             │   dim_customers · dim_products     │
+                             │   fact_transactions · agg_rfm      │
                              └────────────────┬───────────────────┘
                                               │
                     ┌─────────────────────────┼───────────────────────┐
                     │                         │                       │
                     ▼                         ▼                       ▼
-        ┌─────────────────┐     ┌─────────────────────┐   ┌──────────────────┐
-        │     MLflow      │     │     FastAPI          │   │    AI Analyst    │
-        │  Experiment     │────▶│  REST API · v1       │◀──│  SSE Streaming   │
-        │  Tracking +     │     │  + SSE Streaming     │   └──────────────────┘
-        │  Model Registry │     └──────────┬──────────┘
+        ┌─────────────────┐      ┌─────────────────────┐    ┌──────────────────┐
+        │     MLflow      │      │     FastAPI         │    │    AI Analyst    │
+        │  Experiment     │────▶ │  REST API · v1      │◀──│  SSE Streaming   │
+        │  Tracking +     │      │  + SSE Streaming    │    └──────────────────┘
+        │  Model Registry │      └──────────┬──────────┘
         └─────────────────┘                │
                     │                      │   Redis (cache)
                     │                      ▼
                     │         ┌─────────────────────┐
                     └────────▶│     Next.js 14      │
-                              │  Dashboard · Charts  │
-                              │  TanStack · shadcn   │
+                              │  Dashboard · Charts │
+                              │  TanStack · shadcn  │
                               └─────────────────────┘
 ```
 
