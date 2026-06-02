@@ -319,12 +319,6 @@ make test-cov          # With HTML coverage report
 
 ---
 
-## 📄 License
-
-Apache 2.0 © [Farhan](https://github.com/farhanhl-ds)
-
----
-
 <div align="center">
 
 Built with a passion for turning data into decisions and boosted with lots of ☕.
