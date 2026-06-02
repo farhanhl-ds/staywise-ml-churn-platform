@@ -1,0 +1,62 @@
+.github
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# ML artifacts (use S3/MLflow instead)
+ml/models/churn_predictor/*
+ml/models/sentiment/*
+!ml/models/churn_predictor/.gitkeep
+!ml/models/sentiment/.gitkeep
+ml/evaluation/eval_results/*
+!ml/evaluation/eval_results/.gitkeep
+mlruns/
+
+# Node
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Docker
+*.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (never commit raw data)
+data/raw/*
+data/processed/*
+*.csv
+*.parquet
+*.pkl
+*.joblib
