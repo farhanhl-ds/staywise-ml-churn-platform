@@ -28,9 +28,9 @@
 
 ## 🎯 Overview
 
-StayWise is a production-grade MLOps platform that helps e-commerce businesses identify at-risk customers before they churn and act on it automatically. It covers the full analytics lifecycle — from real-time event ingestion and feature engineering, to churn scoring, retention recommendations, and AI-powered insights delivery.
+StayWise is a production-grade MLOps platform that helps e-commerce businesses identify at-risk customers before they churn and act on it automatically. It covers the full analytics lifecycle, spans from real-time event ingestion and feature engineering to churn scoring, retention recommendations, and AI-powered insights delivery.
 
-Designed for scale, observability, and maintainability — with a clean separation between data engineering, machine learning, and product layers.
+Designed for scale, observability, and maintainability with a clean separation between data engineering, machine learning, and product layers.
 
 ---
 
@@ -134,7 +134,7 @@ Kafka events
 - Python 3.12+ (for local backend dev)
 - Node.js 20+ (for local frontend dev)
 
-### 1 — Clone & configure
+### 1. Clone & configure
 
 ```bash
 git clone https://github.com/farhanhl-ds/staywise-churn-platform.git
@@ -144,20 +144,20 @@ cp .env.example .env
 # Edit .env — fill in DATABASE_URL, JWT_SECRET_KEY, AWS credentials
 ```
 
-### 2 — Start infrastructure
+### 2. Start infrastructure
 
 ```bash
 make dev
 ```
 
-### 3 — Run migrations & seed data
+### 3. Run migrations & seed data
 
 ```bash
 make migrate
 make seed
 ```
 
-### 4 — Start the app
+### 4. Start the app
 
 ```bash
 # Backend (FastAPI on :8000)
@@ -167,7 +167,7 @@ make run
 make frontend-dev
 ```
 
-### 5 — Open the dashboard
+### 5. Open the dashboard
 
 ```
 http://localhost:3000          # Dashboard
@@ -287,31 +287,31 @@ make test-cov          # With HTML coverage report
 
 ## 📈 Roadmap
 
-### Phase 1 — Foundation
+### Phase 1 - Foundation
 - [x] Project scaffold + folder structure
 - [ ] FastAPI skeleton + DB connection + auth
 - [ ] Health check endpoint
 - [ ] Alembic migrations + star schema
 
-### Phase 2 — Data Layer
+### Phase 2 - Data Layer
 - [ ] Kafka consumer (raw transaction ingestion)
 - [ ] Airflow: `rfm_feature_dag`
 - [ ] Airflow: `churn_labeling_dag`
 - [ ] AWS S3 integration
 
-### Phase 3 — ML Layer
+### Phase 3 - ML Layer
 - [ ] Feature engineering pipeline
 - [ ] Model training with experiment tracking
 - [ ] Model registry + production promotion
 - [ ] Airflow: `scoring_dag`
 
-### Phase 4 — API + UI
+### Phase 4 - API + UI
 - [ ] All FastAPI endpoints
 - [ ] Next.js dashboard pages
 - [ ] AI Analyst with SSE streaming
 - [ ] A/B testing + uplift modeling page
 
-### Phase 5 — Production
+### Phase 5 - Production
 - [ ] Docker Compose dual profile
 - [ ] CI/CD workflows
 - [ ] Observability (tracing, cost tracking, feedback)
